@@ -1,0 +1,49 @@
+:root {
+    text-align: center;
+    --grid-col: 1;
+    --grid-row: 1;
+}
+
+h1 {
+    color: #2d3436;
+}
+
+h2 {
+    color: #ff4757;
+}
+
+#container {
+    border: 4px solid black;
+    width: 512px;
+    height: 512px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-col), 1fr);
+    grid-template-rows: repeat(var(--grid-row), 1fr);
+}
+
+.div-item {
+    background-color: #2d3436;
+    
+}
+
+.active {
+    background-color: #ff4757;
+}
+
+#resetButton {
+    background-color: #2d3436;
+    padding: 0.5rem 2rem;
+    margin: 1rem;
+    font-size: 1rem;
+    color: #ff4757;
+    font-weight: bold;
+     border: none;
+    
+}
+
+#resetButton:hover {
+    background-color: #ff4757;
+    color: #2d3436;
+   
+}
